@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Termperature sensor real time application</title>
+		<link href="layout.css" rel="stylesheet" type="text/css">
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
+		<script language="javascript" type="text/javascript" src="jquery.js"></script>
+		<script language="javascript" type="text/javascript" src="jquery.flot.js"></script>
+	</head>
+	<body>
+	<center><h1>Temperature sensor application interface</h1></center>
+
+		<div id="placeholder"
+			style="width:800px;height:350px;float:left"></div>
+		<div id="sidepanel"
+			style="width:450px;height:350px;float:left;border-style:solid;background-color:green;">
+			<p><input type="datetime-local" id="start_time">-><input
+			type="time" id="stop_time">
+			<button id="extrema_temp">query</button>
+			</p>
+			<p id="hoverdata">Mouse hovers at
+			(<span id="x">0</span>,<span id="y">0</span>).<span
+				id="clickdata"></span></p>
+			<p>Max/min temperature between this time interval
+			<input type="text" style="width:150px" id="max_temp" disabled
+			value="Max: ">
+			<input type="text" style="width:150px" id="min_temp" disabled
+			value="Min:">
+			<input type="text" style="width:100px" id="ave_temp" disabled
+			value="ave:">
+			</p>
+
+			<p>You can update a chart periodically to get a real-time effect.</p>
+
+			<p>Time between updates: <input id="updateInterval" type="text" value="" style="text-align: right; width:5em"> milliseconds</p>
+
+			<p>
+				<button id="starttimer">Start</button>
+				<button id="stoptimer">Stop</button>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="tempsensor.js"></script>
+
+	</body>
+</html>

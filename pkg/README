@@ -1,0 +1,13 @@
+		Temperature sensor real time application 
+1 System requirement:
+	1)Ftd2xx library.
+	2)A web browser,chrome recommanded.
+	3)A web server,Apache or this CGIHTTPServer(python needed) and so on.
+	4)A linux operating system with root privilege(needed to access USB
+		device).
+
+2 RUN
+	1)Run the http server as root
+	2)Visit the index.html via the browser with correct url and port,such
+	as:"http://localhost:8000/index.html"
+	3)Manage the temperature sensor on the web page
